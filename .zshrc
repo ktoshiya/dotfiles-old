@@ -12,3 +12,5 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 PROMPT='%n@%m %c'\$vcs_info_msg_0_' %# '
 precmd(){ vcs_info }
 
+alias vi='nvim'
+alias vim='nvim'
