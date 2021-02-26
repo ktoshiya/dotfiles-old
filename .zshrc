@@ -27,3 +27,5 @@ export FZF_DEFAULT_OPTS='--height 30% --border'
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
+# ctags
+alias ctags_ruby='ctags --langmap=RUBY:.rb --exclude="*.js" --exclude=".git*" --exclude="*.sql" --exclude="node_modules*" -R .'
