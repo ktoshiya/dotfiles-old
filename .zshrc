@@ -12,5 +12,18 @@ zstyle ':vcs_info:*' actionformats '[%b|%a]'
 PROMPT='%n@%m %c'\$vcs_info_msg_0_' %# '
 precmd(){ vcs_info }
 
+# nvim
 alias vi='nvim'
 alias vim='nvim'
+
+# Settings for fzf
+export PATH="$PATH:$HOME/.fzf/bin"
+export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
+export FZF_DEFAULT_OPTS='--height 30% --border'
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# rbenv
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+

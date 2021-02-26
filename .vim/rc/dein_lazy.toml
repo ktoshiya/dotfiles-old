@@ -1,3 +1,18 @@
 [[plugins]]
 repo = 'cespare/vim-toml'
 on_ft = ['toml']
+
+[[plugins]]
+repo = 'vim-ruby/vim-ruby'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'tpope/vim-rails'
+on_ft = ['ruby']
+
+[[plugins]]
+repo = 'alpaca-tc/vim-endwise.git'
+on_ft = ['ruby']
+hook_add = '''
+  let g:endwise_no_mappings=1
+'''
