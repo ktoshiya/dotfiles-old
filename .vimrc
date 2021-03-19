@@ -175,7 +175,15 @@ set rtp+=/usr/local/opt/fzf
 "-------------------------------------------------------------------------------
 " coc 
 "-------------------------------------------------------------------------------
-let g:coc_global_extensions = ['coc-solargraph']
+" Extensions
+let g:coc_global_extensions = [
+  \ 'coc-solargraph',
+  \ 'coc-json',
+  \ 'coc-tsserver',
+  \ 'coc-prettier',
+  \ 'coc-eslint',
+  \ 'coc-go',
+  \ ]
 
 inoremap <silent><expr> <TAB>
       \ pumvisible() ? "\<C-n>" :
