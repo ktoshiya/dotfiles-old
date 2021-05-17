@@ -31,3 +31,7 @@ export FZF_DEFAULT_OPTS='--height 30% --border'
 alias ctags_ruby='ctags --langmap=RUBY:.rb --exclude="*.js" --exclude=".git*" --exclude="*.sql" --exclude="node_modules*" -R .'
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+if [ $SHLVL = 1 ]; then
+  tmux
+fi
