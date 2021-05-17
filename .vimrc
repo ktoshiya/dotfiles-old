@@ -125,6 +125,8 @@ let g:dein#install_github_api_token = 'GITHUB_API_TOKEN'
 let g:rc_dir         = expand('~/.vim/rc')
 let g:dein_toml      = g:rc_dir . '/dein.toml'
 let g:dein_lazy_toml = g:rc_dir . '/dein_lazy.toml'
+let g:typescript_indent_disable = 1
+
 
 " Required:
 set runtimepath+=~/.cache/dein/repos/github.com/Shougo/dein.vim
