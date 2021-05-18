@@ -16,21 +16,10 @@ precmd(){ vcs_info }
 alias vi='nvim'
 alias vim='nvim'
 
-# Settings for fzf
-export PATH="$PATH:$HOME/.fzf/bin"
-export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
-export FZF_DEFAULT_OPTS='--height 30% --border'
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-
 # rbenv
 [[ -d ~/.rbenv  ]] && \
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
-
-# ctags
-alias ctags_ruby='ctags --langmap=RUBY:.rb --exclude="*.js" --exclude=".git*" --exclude="*.sql" --exclude="node_modules*" -R .'
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
 if [ $SHLVL = 1 ]; then
   tmux
