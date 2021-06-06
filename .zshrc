@@ -1,6 +1,7 @@
 export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
 alias ide="~/.ide.sh"
 
+export GOPATH=$HOME/go
 # git設定
 autoload -Uz vcs_info
 setopt prompt_subst
@@ -21,6 +22,6 @@ alias vim='nvim'
   export PATH=${HOME}/.rbenv/bin:${PATH} && \
   eval "$(rbenv init -)"
 
-if [ $SHLVL = 1 ]; then
-  tmux
-fi
+# if [ $SHLVL = 1 ]; then
+#   tmux
+# fi
