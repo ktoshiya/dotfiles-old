@@ -1,7 +1,10 @@
 export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
 alias ide="~/.ide.sh"
 
-export GOPATH=$HOME/go
+# Golangのパス設定
+export GOPATH=$(go env GOPATH)
+export PATH=$PATH:$GOPATH/bin
+
 # git設定
 autoload -Uz vcs_info
 setopt prompt_subst
