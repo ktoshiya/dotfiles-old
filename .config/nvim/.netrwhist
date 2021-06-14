@@ -1,5 +1,6 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/Users/tk/hrbase-pro/api/interfaces/controllers'
 let g:netrw_dirhist_2='/Users/tk/hrbase-pro/api'
 let g:netrw_dirhist_1='/Users/tk/hrbase-pro'
 let g:netrw_dirhist_0='/Users/tk/dotfiles'
@@ -9,4 +10,3 @@ let g:netrw_dirhist_7='/Users/tk/dotfiles'
 let g:netrw_dirhist_6='/Users/tk/dotfiles/.vim/rc'
 let g:netrw_dirhist_5='/Users/tk/dotfiles/.vim'
 let g:netrw_dirhist_4='/Users/tk/dotfiles'
-let g:netrw_dirhist_3='/Users/tk/flucle-jupiter'
