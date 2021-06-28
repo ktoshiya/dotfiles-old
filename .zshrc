@@ -1,5 +1,4 @@
 export PATH="/usr/local/Cellar/git/2.5.0/bin:$PATH"
-alias ide="~/.ide.sh"
 
 # Golangのパス設定
 export GOPATH=$(go env GOPATH)
@@ -17,8 +16,14 @@ PROMPT='%n@%m %c'\$vcs_info_msg_0_' %# '
 precmd(){ vcs_info }
 
 # nvim
+alias ls='ls -p -G'
+alias la='ls -A'
+alias ll='ls -l'
+alias lla='ll -A'
+alias g='git'
 alias vi='nvim'
 alias vim='nvim'
+alias ide="~/.ide.sh"
 
 # rbenv
 [[ -d ~/.rbenv  ]] && \
@@ -28,3 +33,4 @@ alias vim='nvim'
 # if [ $SHLVL = 1 ]; then
 #   tmux
 # fi
+#
