@@ -149,7 +149,18 @@ nvim_lsp.diagnosticls.setup {
 }
 
 -- golang
-nvim_lsp["gopls"].setup { on_attach = on_attach }
+nvim_lsp["gopls"].setup { 
+  on_attach = on_attach,
+  cmd = {"gopls", "serve"},
+  settings = {
+    gopls = {
+      analyses = {
+        unusedparams = true,
+      },
+      staticcheck = true,
+    },
+  },
+}
 
 -- ruby
 nvim_lsp["solargraph"].setup{

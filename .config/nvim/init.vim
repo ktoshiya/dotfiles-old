@@ -9,14 +9,15 @@ scriptencoding utf-8
 if !1 | finish | endif
 
 set nocompatible
-set number
 syntax enable
 set fileencodings=utf-8,sjis,euc-jp,latin
 set encoding=utf-8
+set ambiwidth=double
 set title
 set autoindent
 set background=dark
 set nobackup
+set noswapfile
 set hlsearch
 set showcmd
 set cmdheight=1
@@ -24,7 +25,7 @@ set laststatus=2
 set scrolloff=10
 set expandtab
 "let loaded_matchparen = 1
-set shell=fish
+set shell=zsh
 set backupskip=/tmp/*,/private/tmp/*
 
 " incremental substitution (neovim)
