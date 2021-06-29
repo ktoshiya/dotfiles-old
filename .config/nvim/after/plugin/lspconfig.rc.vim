@@ -151,6 +151,20 @@ nvim_lsp.diagnosticls.setup {
 -- golang
 nvim_lsp["gopls"].setup { on_attach = on_attach }
 
+-- ruby
+nvim_lsp["solargraph"].setup{
+  cmd = { "solargraph", "stdio" },
+  filetypes = { "ruby" },
+  root_patterns = { "Gemfile", ".git" },
+  settings = {
+    solargraph = {
+      diagnostics = true,
+      commandPath = { "~/.rbenv/shims/solargraph" },
+      useBundler = false,
+    }
+  }
+}
+
 -- icon
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
   vim.lsp.diagnostic.on_publish_diagnostics, {
