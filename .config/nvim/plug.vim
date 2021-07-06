@@ -23,6 +23,7 @@ if has("nvim")
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'tpope/vim-rails'
+  Plug 'mattn/vim-goimports'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
