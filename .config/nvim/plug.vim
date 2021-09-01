@@ -12,6 +12,7 @@ if has("nvim")
   Plug 'hoob3rt/lualine.nvim'
   Plug 'kristijanhusak/defx-git'
   Plug 'kristijanhusak/defx-icons'
+  Plug 'airblade/vim-gitgutter'
   Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
   Plug 'neovim/nvim-lspconfig'
   Plug 'folke/lsp-colors.nvim'
@@ -24,7 +25,6 @@ if has("nvim")
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'tpope/vim-rails'
   Plug 'mattn/vim-goimports'
-  Plug 'fatih/vim-go'
 endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
